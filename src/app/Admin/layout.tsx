@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-
-
 import { ThemeProvider } from "@/providers/theme-provider";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
@@ -17,24 +15,25 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Header/>
-            <div className="flex">
-              <Sidebar/>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="flex flex-col">
+            <Header />
+            <div className="flex h-screen overflow-hidden">
+              <Sidebar />
               {children}
             </div>
-            
-      </ThemeProvider>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

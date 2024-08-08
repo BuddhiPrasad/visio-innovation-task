@@ -1,15 +1,15 @@
-import React from 'react'
-import Nav from './Nav'
+import React from "react";
+import Nav from "./Nav";
 
 const Sidebar = () => {
   return (
-    <div className='bg-gray-400 h-screen'>
+    <div className="h-screen">
       {/*Item List */}
       <div>
-        <Nav/>
+        <Nav />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
