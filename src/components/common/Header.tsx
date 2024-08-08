@@ -1,9 +1,9 @@
 import React from "react";
 import Logo from "./Logo";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 import { IoNotificationsOutline, IoSettingsOutline } from "react-icons/io5";
 import { ThemeToggle } from "./theme-toggler";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 const Header = () => {
   return (
