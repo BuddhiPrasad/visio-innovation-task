@@ -16,6 +16,7 @@ import {
 import { IoSettingsOutline, IoNotificationsOutline } from "react-icons/io5";
 import { RiCoupon2Line, RiMoneyDollarCircleLine } from "react-icons/ri";
 import { FaRegFileWord } from "react-icons/fa";
+import { LiaMailBulkSolid } from "react-icons/lia";
 
 const Links = [
   {
@@ -31,7 +32,7 @@ const Links = [
   {
     path: "/admin/email",
     name: "Email",
-    icon: <MdOutlineEmail size={25} />,
+    icon: <LiaMailBulkSolid size={25} />,
   },
   {
     path: "/admin/email-templates",
