@@ -9,7 +9,7 @@ export interface StatCard {
 
 const StatCard = ({ title, maincount, active, inactiv }: StatCard) => {
   return (
-    <div className="bg-white flex flex-col p-2 rounded-xl gap-y-8 w-full">
+    <div className="bg-white flex flex-col p-4 rounded-xl gap-y-8 w-full">
       {/*upset */}
       <div className="flex items-center">
         <h1 className="text-6xl font-bold">{maincount}</h1>

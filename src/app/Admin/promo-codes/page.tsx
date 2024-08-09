@@ -1,17 +1,14 @@
 
+import UnderDevelopment from '@/components/common/UnderDevelopment'
 import React from 'react'
 
 const PromoCodes = () => {
   return (
-    <section className='bg-blue-100 w-full'>
-      <div className='pl-4 pt-4 bg-red-200 w-full'>
-        PromoCodes
-        
+    <div className="flex-1 overflow-auto  w-full">
+      <div className="p-6  flex items-center justify-center h-screen">
+        <UnderDevelopment />
       </div>
-     
-
-      
-    </section>
+    </div>
   )
 }
 
