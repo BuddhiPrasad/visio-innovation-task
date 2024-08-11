@@ -20,52 +20,52 @@ import { LiaMailBulkSolid } from "react-icons/lia";
 
 const Links = [
   {
-    path: "/admin/dashboard",
+    path: "/dashboard",
     name: "Dashboard",
     icon: <MdDashboard size={25} />,
   },
   {
-    path: "/admin/advisor-settings",
+    path: "/advisor-settings",
     name: "Advisor Settings",
     icon: <IoSettingsOutline size={25} />,
   },
   {
-    path: "/admin/email",
+    path: "/email",
     name: "Email",
     icon: <LiaMailBulkSolid size={25} />,
   },
   {
-    path: "/admin/email-templates",
+    path: "/email-templates",
     name: "Email Templates",
     icon: <MdOutlineEmail size={25} />,
   },
   {
-    path: "/admin/promo-codes",
+    path: "/promo-codes",
     name: "Promo Codes",
     icon: <RiCoupon2Line size={25} />,
   },
   {
-    path: "/admin/word-telplates",
+    path: "/word-telplates",
     name: "Word Telplates",
     icon: <FaRegFileWord size={25} />,
   },
   {
-    path: "/admin/superannuation",
+    path: "/superannuation",
     name: "Superannuation",
     icon: <RiMoneyDollarCircleLine size={25} />,
   },
   {
-    path: "/admin/subscription",
+    path: "/subscription",
     name: "Subscription",
     icon: <MdOutlineSubscriptions size={25} />,
   },
   {
-    path: "/admin/payment-history",
+    path: "/payment-history",
     name: "Payment History",
     icon: <MdOutlinePayment size={25} />,
   },
   {
-    path: "/admin/notification",
+    path: "/notification",
     name: "Notification",
     icon: <IoNotificationsOutline size={25} />,
   },
@@ -73,6 +73,7 @@ const Links = [
 
 const Nav = () => {
   const path = usePathname();
+  console.log(path);
 
   return (
     <nav className="flex flex-col justify-between h-screen">

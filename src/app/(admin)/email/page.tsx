@@ -1,5 +1,5 @@
-import CustomBackButton from "@/components/common/custom-back-bitton";
-import UnderDevelopment from "@/components/common/UnderDevelopment";
+import CustomBackButton from "@/app/(admin)/_components/custom-back-bitton";
+import UnderDevelopment from "@/components/UnderDevelopment";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";

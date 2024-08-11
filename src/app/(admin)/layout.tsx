@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@/providers/theme-provider";
-import Header from "@/components/common/Header";
-import Sidebar from "@/components/common/Sidebar";
-
+import Header from "@/app/(admin)/_components/header";
+import "./styles.css";
+import Sidebar from "./_components/sidebar";
 
 export default function RootLayout({
   children,

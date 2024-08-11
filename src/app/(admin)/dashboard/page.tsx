@@ -5,9 +5,9 @@ import React from "react";
 
 import AdviserSettings from "../../../../public/Adviser settings.png";
 import { Calendar } from "@/components/ui/calendar";
-import StatCard from "@/components/admin/dashboard/stat-main-card";
-import EndCard from "@/components/admin/dashboard/end-main-card";
-import NotificationCard from "@/components/admin/dashboard/notification-card";
+import StatCard from "@/app/(admin)/_components/_dashboard/stat-main-card";
+import EndCard from "@/app/(admin)/_components/_dashboard/end-main-card";
+import NotificationCard from "@/app/(admin)/_components/_dashboard/notification-card";
 
 const Dashboard = () => {
   const [date, setDate] = React.useState<Date | undefined>(new Date());

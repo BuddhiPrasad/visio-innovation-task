@@ -1,5 +1,5 @@
-import EmailCard from "@/components/admin/email-templates/email-card";
-import CustomBackButton from "@/components/common/custom-back-bitton";
+import EmailCard from "@/app/(admin)/_components/_email-templates/email-card";
+import CustomBackButton from "@/app/(admin)/_components/custom-back-bitton";
 import { Button } from "@/components/ui/button";
 import React from "react";
 

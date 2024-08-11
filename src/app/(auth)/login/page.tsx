@@ -5,17 +5,19 @@ import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Logo from "@/components/Logo";
 
 const path = "/Admin/dashboard";
 
 const Login = () => {
   return (
     <section className="flex flex-col items-center justify-center bg-blue-100 h-screen ">
-      <div className="flex items-center justify-center container mx-auto">
+      <div className="flex flex-col items-center justify-center container mx-auto">
         <div className="bg-white p-8 rounded-2xl">
           {/**=text */}
           <div className="mb-4">
-            <h1 className="h1 text-center mb-8">My Finance</h1>
+            <Logo />
             <h2 className="h2 text-center mb-4">Hi, Welcome Back</h2>
             <p className="text-muted-foreground text-center">
               Enter your credentials to continue
@@ -48,11 +50,11 @@ const Login = () => {
 
           {/*button */}
           <Button asChild className="w-full">
-            <Link href="/admin">
-              Login{" "}
+            <Link href="/dashboard">
+              Login
               <span className="pl-2">
                 <CiLogin size={25} />
-              </span>{" "}
+              </span>
             </Link>
           </Button>
         </div>

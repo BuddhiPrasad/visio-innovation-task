@@ -1,5 +1,5 @@
+import Nav from "@/app/(admin)/_components/nav";
 import React from "react";
-import Nav from "./Nav";
 
 const Sidebar = () => {
   return (

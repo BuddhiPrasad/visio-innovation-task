@@ -1,10 +1,10 @@
-import TaxCard from "@/components/admin/advisor-settings/tax-card";
-import UnderDevelopment from "@/components/common/UnderDevelopment";
+import TaxCard from "@/app/(admin)/_components/_advisor-settings/tax-card";
+import UnderDevelopment from "@/components/UnderDevelopment";
 import { Button } from "@/components/ui/button";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 
 import React from "react";
-import CustomBackButton from "@/components/common/custom-back-bitton";
+import CustomBackButton from "@/app/(admin)/_components/custom-back-bitton";
 
 const AdvisorSettings = () => {
   return (
