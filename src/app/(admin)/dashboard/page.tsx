@@ -15,7 +15,7 @@ const Dashboard = () => {
   return (
     <>
       <div className="flex-1 overflow-auto bg-blue-100 w-full">
-        <div className="flex flex-col md:flex-row p-4 gap-4">
+        <div className="flex flex-col lg:flex-row p-4 gap-4">
           {/*left side */}
           <div className="flex flex-col gap-4 w-full">
             {/*3 card div */}
