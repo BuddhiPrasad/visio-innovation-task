@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.h1-dashboard {
+  @apply text-5xl md:text-4xl font-bold text-green-500;
+}
+
+.button-admin-main {
+  @apply bg-[#215273] min-w-[150px];
+}
+
+.button-admin-sub {
+  @apply bg-[#215273]/75 min-w-[150px];
+}
+
+.advisor-settings-card-title {
+  @apply mb-4 text-sm font-bold md:text-xl;
+}

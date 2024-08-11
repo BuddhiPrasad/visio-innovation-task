@@ -15,14 +15,14 @@ const AdvisorSettings = () => {
           <CustomBackButton />
         </div>
         <div className="flex flex-col md:flex-row gap-4">
-          <Button className="min-w-[180px]">Individual Tax Settings</Button>
-          <Button className="min-w-[180px]">Company tax Settings</Button>
+          <Button className="button-admin-main">Individual Tax Settings</Button>
+          <Button className="button-admin-sub">Company tax Settings</Button>
         </div>
       </div>
 
       <div className="flex flex-col bg-white p-4 m-4 gap-4 rounded-xl h-screen">
         <div className="flex justify-end">
-          <Button className="min-w-[150px]">Add a Tax</Button>
+          <Button className="button-admin-main">Add a Tax</Button>
         </div>
         <div>
           <TaxCard />

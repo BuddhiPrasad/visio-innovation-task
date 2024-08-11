@@ -41,7 +41,7 @@ const Email = () => {
               <Textarea placeholder="Message" />
             </div>
             <div className="flex justify-end">
-              <Button className="min-w-[150px]">Send Email</Button>
+              <Button className="button-admin-main">Send Email</Button>
             </div>
           </div>
         </div>

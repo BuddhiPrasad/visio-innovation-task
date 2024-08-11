@@ -15,11 +15,11 @@ const Dashboard = () => {
   return (
     <>
       <div className="flex-1 overflow-auto bg-blue-100 w-full">
-        <div className="flex flex-col md:flex-row  p-4 gap-4 ">
+        <div className="flex flex-col md:flex-row p-4 gap-4">
           {/*left side */}
           <div className="flex flex-col gap-4 w-full">
             {/*3 card div */}
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="grid md:grid-cols-3 gap-4">
               <StatCard
                 title="Total Advisors"
                 maincount={24}
@@ -53,7 +53,7 @@ const Dashboard = () => {
             </div>
 
             {/*4 card div */}
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="grid md:grid-cols-4 gap-4">
               <EndCard image="/Adviser settings.png" title="Organizations" />
               <EndCard image="/Adviser settings.png" title="Promo Codes" />
               <EndCard image="/Adviser settings.png" title="Word Templates" />
@@ -76,7 +76,12 @@ const Dashboard = () => {
             {/*notification list */}
             <div className="bg-white p-2 rounded-xl">
               <div className="flex flex-col gap-2">
-                <h1 className="text-xl font-bold">Notification</h1>
+                <h1 className="text-xl font-bold">
+                  Notification{" "}
+                  <span className="bg-red-600 rounded-full p-2 text-sm text-white">
+                    04
+                  </span>
+                </h1>
                 <NotificationCard />
               </div>
             </div>

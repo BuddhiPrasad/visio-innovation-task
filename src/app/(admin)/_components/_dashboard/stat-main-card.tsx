@@ -12,18 +12,20 @@ const StatCard = ({ title, maincount, active, inactiv }: StatCard) => {
     <div className="bg-white flex flex-col p-4 rounded-xl gap-y-8 w-full">
       {/*upset */}
       <div className="flex items-center">
-        <h1 className="text-6xl font-bold">{maincount}</h1>
+        <h1 className="h1-dashboard">{maincount}</h1>
         <span>{title}</span>
       </div>
       {/*downset */}
       <div className="flex justify-between">
         <div className="flex flex-col gap-2">
-          <h2 className="text-3xl font-bold">{active}</h2>
-          <span className="uppercase">active</span>
+          <h2 className="text-2xl font-bold text-blue-600">{active}</h2>
+          <span className="uppercase text-sm">active</span>
         </div>
         <div className="flex flex-col gap-2">
-          <h2 className="text-3xl font-bold text-right">{inactiv}</h2>
-          <span className="uppercase text-right">inactive</span>
+          <h2 className="text-2xl font-bold text-right text-red-600">
+            {inactiv}
+          </h2>
+          <span className="uppercase text-right text-sm">inactive</span>
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ const EndCard = ({ image, title }: EndCard) => {
       <div className="flex items-center justify-center gap-2">
         <Image src={image} alt="AdviserSettings" width={150} height={150} />
       </div>
-      <h4 className="font-bold text-center">{title}</h4>
+      <h4 className="text-sm font-bold text-center">{title}</h4>
     </div>
   );
 };

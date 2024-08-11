@@ -17,7 +17,7 @@ const EmailTemplate = () => {
 
       <div className="flex flex-col bg-white p-4 m-4 gap-4 rounded-xl h-screen">
         <div className="flex justify-end">
-          <Button className="min-w-[150px]">Add a Email Template</Button>
+          <Button className="button-admin-main">Add a Email Template</Button>
         </div>
         <div>
           <EmailCard />

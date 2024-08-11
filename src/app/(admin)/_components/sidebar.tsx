@@ -3,11 +3,9 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="h-screen">
-      {/*Item List */}
-      <div>
+    <div className="h-screen bg-[#215273]">
+      {/*Navi List */}
         <Nav />
-      </div>
     </div>
   );
 };
