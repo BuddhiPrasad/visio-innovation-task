@@ -1,19 +1,19 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { CiLogin } from "react-icons/ci";
+import { GrLinkNext } from "react-icons/gr";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center bg-blue-100 h-screen ">
+    <main className="flex flex-col items-center justify-center bg-blue-100 h-screen">
       {/*button */}
-      <Button asChild className="w-[300px]">
+      <Button asChild>
         <Link href="/login">
-          Get Start
+          Get Started
           <span className="pl-2">
-            <CiLogin size={25} />
+            <GrLinkNext size={20} />
           </span>
         </Link>
       </Button>
-    </section>
+    </main>
   );
 }

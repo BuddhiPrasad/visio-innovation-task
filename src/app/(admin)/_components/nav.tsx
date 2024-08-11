@@ -73,23 +73,24 @@ const Links = [
 
 const Nav = () => {
   const path = usePathname();
-  console.log(path);
 
   return (
     <nav className="flex flex-col justify-between h-screen">
       <div className="">
         {Links.map((link, index) => {
+          const isActiv = path.startsWith(link.path);
           return (
             <div
               className="flex items-center gap-x-2 m-8 w-fit lg:w-[180px]"
               key={index}
             >
-              <Link href={link.path}>{link.icon}</Link>
               <Link
                 href={link.path}
-                className="hover:text-primary hidden lg:flex"
+                className={
+                  isActiv ? "font-bold" : "hover:text-primary hidden lg:flex"
+                }
               >
-                {link.name}
+                {link.icon} {link.name}
               </Link>
             </div>
           );

@@ -1,6 +1,6 @@
 import React from "react";
 
-import image01 from "../../../public/under development.png";
+import image01 from "@/../public/under development.png";
 import Image from "next/image";
 
 const UnderDevelopment = () => {
